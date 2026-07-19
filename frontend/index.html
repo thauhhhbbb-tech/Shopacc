@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ShopACC.ME - Bán acc game uy tín</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container header-container">
+      <div class="logo">
+        <h1>SHOPACC.ME</h1>
+        <span>Acc Game - Uy tín hàng đầu</span>
+      </div>
+      <nav>
+        <a href="#" id="nav-home">Trang chủ</a>
+        <a href="#" id="nav-products">Sản phẩm</a>
+        <a href="#" id="nav-orders">Đơn hàng</a>
+        <a href="#" id="nav-admin" style="display:none;">Admin</a>
+      </nav>
+      <div class="header-actions">
+        <span id="user-balance" style="display:none;"><i class="fas fa-coins"></i> 0 ₫</span>
+        <span id="user-name" style="display:none;"></span>
+        <button id="login-btn" class="btn btn-primary">Đăng Nhập</button>
+        <button id="logout-btn" class="btn btn-secondary" style="display:none;">Đăng xuất</button>
+        <button id="cart-btn" class="btn btn-outline"><i class="fas fa-shopping-cart"></i> Giỏ (<span id="cart-count">0</span>)</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Banner giảm giá -->
+  <section class="banner">
+    <div class="container">
+      <h2>🔥 NGHỈ HỆ CỰC CHÁY 🔥</h2>
+      <p>GIẢM NGAY <span>20%</span> TOÀN BỘ</p>
+      <p class="sub">SALE HỌC SINH - ACC CHẤT LƯỢNG - GIÁ SIÊU RẺ</p>
+      <p class="sub">Bảo hành lý tin · Free Fire · Liên Quân · GARCONT · Roblox · Minecraft</p>
+      <a href="#" class="btn btn-banner">MUA NGAY</a>
+    </div>
+  </section>
+
+  <!-- Top nạp -->
+  <section class="topup">
+    <div class="container">
+      <h3>🏆 TOP NẠP</h3>
+      <div class="topup-list">
+        <div class="topup-item">1. Hoạ******* <span>+3.420.000 ₫</span></div>
+        <div class="topup-item">2. Tun******* <span>+3.180.000 ₫</span></div>
+        <div class="topup-item">3. Bao****** <span>+2.760.000 ₫</span></div>
+        <div class="topup-item">4. Nhạ******* <span>+2.320.000 ₫</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Danh sách sản phẩm -->
+  <section class="products" id="product-list">
+    <div class="container">
+      <h3>🔥 SẢN PHẨM NỔI BẬT</h3>
+      <div class="product-grid" id="product-grid"></div>
+    </div>
+  </section>
+
+  <!-- Modal giỏ hàng -->
+  <div id="cart-modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Giỏ hàng</h2>
+      <div id="cart-items"></div>
+      <div id="cart-total">Tổng: 0 ₫</div>
+      <button id="checkout-btn" class="btn btn-primary">Thanh toán</button>
+    </div>
+  </div>
+
+  <!-- Modal đăng nhập -->
+  <div id="login-modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Đăng nhập</h2>
+      <form id="login-form">
+        <input type="text" id="login-username" placeholder="Tên đăng nhập" required />
+        <input type="password" id="login-password" placeholder="Mật khẩu" required />
+        <button type="submit" class="btn btn-primary">Đăng nhập</button>
+      </form>
+      <p>Chưa có tài khoản? <a href="#" id="show-register">Đăng ký</a></p>
+    </div>
+  </div>
+
+  <!-- Modal đăng ký -->
+  <div id="register-modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Đăng ký</h2>
+      <form id="register-form">
+        <input type="text" id="reg-username" placeholder="Tên đăng nhập" required />
+        <input type="email" id="reg-email" placeholder="Email" required />
+        <input type="password" id="reg-password" placeholder="Mật khẩu" required />
+        <button type="submit" class="btn btn-primary">Đăng ký</button>
+      </form>
+      <p>Đã có tài khoản? <a href="#" id="show-login">Đăng nhập</a></p>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+  </html>
