@@ -1,0 +1,28 @@
+shopacc/
+├── backend/
+│   ├── config/
+│   │   └── db.js
+│   ├── models/
+│   │   ├── User.js
+│   │   ├── Product.js
+│   │   └── Order.js
+│   ├── routes/
+│   │   ├── auth.js
+│   │   ├── products.js
+│   │   ├── orders.js
+│   │   └── admin.js
+│   ├── middleware/
+│   │   ├── auth.js
+│   │   └── admin.js
+│   ├── .env
+│   ├── package.json
+│   └── server.js
+├── frontend/
+│   ├── css/
+│   │   └── style.css
+│   ├── js/
+│   │   ├── main.js
+│   │   └── admin.js
+│   ├── index.html
+│   └── admin.html
+└── README.md
